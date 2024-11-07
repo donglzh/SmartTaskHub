@@ -1,52 +1,50 @@
 # Smart Task Hub
 
-SmartTaskHub 是一个智能任务管理系统，提供任务注册、任务发现和任务处理机制！
+SmartTaskHub is an smart task management system that provides mechanisms for task registration, task discovery, and task processing!
 
-## 需求
+## Requirements
 
-- 甲方有企业微信推送接口
-- MES中有 设备维修工单 、保养工单、安灯消息、质检任务等数据 ，设计一个超时提醒，并在提醒后一定时间内未处理的情况下升级消息推送的功能；
-  - 要求各种任务使用统一的触发方式；
-  - 对于产生过超时提醒消息的任务不再重复检测生成；
-  - 可扩展其他任务进入到消息检测、提醒机制中（扩展WMS出库任务到统一提醒功能中）；
+- Enterprise WeChat Push Interface
+- MES has equipment repair work orders, maintenance work orders, security light messages, quality inspection tasks and other data, design a timeout reminder, and in the case of reminding a certain period of time after the escalation of the message pushed the function; 
+- Requirements of a variety of tasks to use a unified trigger method;
+- For tasks that have generated a timeout reminder message will not repeat the detection and ge
+- Other tasks can be extended into the message detection and reminder mechanism (extending the WMS outbound task to the unified reminder function);
 
-摘要：统一的触发方式, 不再重复检测生成，扩展性强
+Summary: a unified trigger, no longer repeat the detection and generation, scalable
 
-## 需求实现后，功能落地后
+## After the requirements are realized
 
-- 统一**检索**超期任务的功能，
-- 统一**处理**超期任务的功能，
-  - 发送消息，任务升级
-  - 发送消息
-- 外部系统，可以通过注册任务接口，进行注册任务，取消注册任务
+- Harmonize** the functionality for retrieving **overdue tasks;
+- Harmonize **the function of handling **overdue tasks;
+- Third-party systems can register and unregister tasks through the registration task interface
 
-## 框架设计
 
-### 框架
+## Framework design
+
+### Framework
 
 ![Framework](docs/images/framework.png)
 
-### 模块依赖关系图
+### Module dependency diagram
 
 ```
 SmartTaskHub
-    SmartTaskHub.Core               Core层，核心业务模型和接口
-    SmartTaskHub.DataAccess         数据访问层，数据库访问和数据持久化
-    SmartTaskHub.Infrastructure     基础设施层, Redis, Kafka
-    SmartTaskHub.Service            业务逻辑层，业务逻辑实现，整合各层完成核心业务
-    SmartTaskHub.API                API接口层，为前端或客户端提供服务
-    SmartTaskHub.Poller             轮询服务，消息队列的轮询
-    SmartTaskHub.Consumer           消费者服务，监听消息队列并异步处理
+    SmartTaskHub.Core               Core layer, core business model and interfaces
+    SmartTaskHub.DataAccess         Data access layer, database access and data persistence
+    SmartTaskHub.Infrastructure     Infrastructure layer, Redis, Kafka
+    SmartTaskHub.Service            Business logic layer, business logic implementation, integration of various layers to complete the core business
+    SmartTaskHub.API                API interface layer, providing services for the front-end or client-side
+    SmartTaskHub.Poller             Polling service, Redis queue polling
+    SmartTaskHub.Consumer           Consumer service, listening to the message queue and asynchronous processing
 ```
 
 ![Module Dependency](docs/images/module-dependency.png)
 
+## Functional design
 
-## 功能设计
+### Equipment maintenance orders
 
-### 设备维修工单
-
-表字段：
+Table fields:
 
 ```
 long Id
@@ -56,11 +54,12 @@ long PlannedCompletionTime
 long CreatedAt
 long UpdatedAt
 ```
-功能： 添加、修改、删除、完成
 
-### 任务超时规则
+Function: Add, Modify, Delete, Done
 
-表字段：
+### Task timeout rules
+
+Table fields:
 
 ```
 long Id
@@ -70,23 +69,21 @@ long CreatedAt
 long UpdatedAt
 ```
 
-功能： 添加、删除
+Function: Add, Delete
 
+## O&M
 
-## 运维
+### Entity Mapping
 
-### 实体映射
+Go to the SmartTaskHub.API directory and execute the
 
-进入 SmartTaskHub.API 目录下执行
-
-```
+```shell
 dotnet ef migrations add InitialCreate --project ../SmartTaskHub.DataAccess --startup-project .
 
 dotnet ef database update --project ../SmartTaskHub.DataAccess --startup-project .
 ```
 
-
-### Docker 容器
+### Docker containers
 
 mysql
 
