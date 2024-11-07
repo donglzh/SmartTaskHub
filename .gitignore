@@ -1,0 +1,17 @@
+.vs/
+.vscode/
+.idea/
+
+bin/
+obj/
+
+packages/
+
+*.log
+
+*.user
+*.suo
+
+*.mdf
+*.ldf
+*.sqlite

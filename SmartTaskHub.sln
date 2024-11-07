@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartTaskHub.API", "SmartTaskHub.API\SmartTaskHub.API.csproj", "{55B397E9-2F5A-466D-96B5-EF5F2AD776D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartTaskHub.Consumer", "SmartTaskHub.Consumer\SmartTaskHub.Consumer.csproj", "{6169413D-6EBB-4215-841C-96167F00D6C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartTaskHub.Poller", "SmartTaskHub.Poller\SmartTaskHub.Poller.csproj", "{82CB49CE-5726-4091-A641-038DEC358D8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartTaskHub.Service", "SmartTaskHub.Service\SmartTaskHub.Service.csproj", "{13431BFE-DFD6-48A0-BA3D-43695FEC96E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartTaskHub.Infrastructure", "SmartTaskHub.Infrastructure\SmartTaskHub.Infrastructure.csproj", "{F345F889-1E28-4FFF-B072-771D2E7CF6E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartTaskHub.DataAccess", "SmartTaskHub.DataAccess\SmartTaskHub.DataAccess.csproj", "{47E9593E-2400-40D1-9FD0-84F1DE525FD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartTaskHub.Core", "SmartTaskHub.Core\SmartTaskHub.Core.csproj", "{47EF231A-15F3-4AF2-A247-8B0DCA1504B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55B397E9-2F5A-466D-96B5-EF5F2AD776D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55B397E9-2F5A-466D-96B5-EF5F2AD776D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55B397E9-2F5A-466D-96B5-EF5F2AD776D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55B397E9-2F5A-466D-96B5-EF5F2AD776D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6169413D-6EBB-4215-841C-96167F00D6C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6169413D-6EBB-4215-841C-96167F00D6C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6169413D-6EBB-4215-841C-96167F00D6C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6169413D-6EBB-4215-841C-96167F00D6C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82CB49CE-5726-4091-A641-038DEC358D8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82CB49CE-5726-4091-A641-038DEC358D8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82CB49CE-5726-4091-A641-038DEC358D8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82CB49CE-5726-4091-A641-038DEC358D8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13431BFE-DFD6-48A0-BA3D-43695FEC96E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13431BFE-DFD6-48A0-BA3D-43695FEC96E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13431BFE-DFD6-48A0-BA3D-43695FEC96E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13431BFE-DFD6-48A0-BA3D-43695FEC96E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F345F889-1E28-4FFF-B072-771D2E7CF6E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F345F889-1E28-4FFF-B072-771D2E7CF6E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F345F889-1E28-4FFF-B072-771D2E7CF6E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F345F889-1E28-4FFF-B072-771D2E7CF6E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47E9593E-2400-40D1-9FD0-84F1DE525FD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47E9593E-2400-40D1-9FD0-84F1DE525FD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47E9593E-2400-40D1-9FD0-84F1DE525FD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47E9593E-2400-40D1-9FD0-84F1DE525FD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47EF231A-15F3-4AF2-A247-8B0DCA1504B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47EF231A-15F3-4AF2-A247-8B0DCA1504B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47EF231A-15F3-4AF2-A247-8B0DCA1504B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47EF231A-15F3-4AF2-A247-8B0DCA1504B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+EndGlobal
