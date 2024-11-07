@@ -1,3 +1,5 @@
+Translations: [English](README.md) | [简体中文](README_cn.md)
+
 # Smart Task Hub
 
 SmartTaskHub is an smart task management system that provides mechanisms for task registration, task discovery, and task processing!
@@ -14,8 +16,8 @@ Summary: a unified trigger, no longer repeat the detection and generation, scala
 
 ## After the requirements are realized
 
-- Harmonize** the functionality for retrieving **overdue tasks;
-- Harmonize **the function of handling **overdue tasks;
+- **Harmonize the functionality for retrieving**overdue tasks;
+- **Harmonize the function of handling**overdue tasks;
 - Third-party systems can register and unregister tasks through the registration task interface
 
 
