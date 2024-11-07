@@ -24,7 +24,7 @@ SmartTaskHub 是一个智能任务管理系统，提供任务注册、任务发�
 
 ### 框架
 
-![Framework](images/framework.png)
+![Framework](docs/images/framework.png)
 
 ### 模块依赖关系图
 
@@ -39,7 +39,7 @@ SmartTaskHub
     SmartTaskHub.Consumer           消费者服务，监听消息队列并异步处理
 ```
 
-![Module Dependency](images/module-dependency.png)
+![Module Dependency](docs/images/module-dependency.png)
 
 
 ## 功能设计

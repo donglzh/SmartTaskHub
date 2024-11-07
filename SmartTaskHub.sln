@@ -14,6 +14,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartTaskHub.DataAccess", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartTaskHub.Core", "SmartTaskHub.Core\SmartTaskHub.Core.csproj", "{47EF231A-15F3-4AF2-A247-8B0DCA1504B5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "README", "README", "{88C00200-BE77-4B0C-86DA-2C66D30333C1}"
+	ProjectSection(SolutionItems) = preProject
+		SmartTaskHub.md = SmartTaskHub.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
