@@ -8,9 +8,9 @@ SmartTaskHub is an smart task management system that provides mechanisms for tas
 
 - Enterprise WeChat Push Interface
 - MES has equipment repair work orders, maintenance work orders, security light messages, quality inspection tasks and other data, design a timeout reminder, and in the case of reminding a certain period of time after the escalation of the message pushed the function; 
-- Requirements of a variety of tasks to use a unified trigger method;
-- For tasks that have generated a timeout reminder message will not repeat the detection and ge
-- Other tasks can be extended into the message detection and reminder mechanism (extending the WMS outbound task to the unified reminder function);
+  - Requirements of a variety of tasks to use a unified trigger method;
+  - For tasks that have generated a timeout reminder message will not repeat the detection and ge
+  - Other tasks can be extended into the message detection and reminder mechanism (extending the WMS outbound task to the unified reminder function);
 
 Summary: a unified trigger, no longer repeat the detection and generation, scalable
 
