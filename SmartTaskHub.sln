@@ -16,8 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartTaskHub.Core", "SmartT
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "README", "README", "{88C00200-BE77-4B0C-86DA-2C66D30333C1}"
 	ProjectSection(SolutionItems) = preProject
-		README_cn.md = README_cn.md
 		README.md = README.md
+		README_en.md = README_en.md
 	EndProjectSection
 EndProject
 Global
